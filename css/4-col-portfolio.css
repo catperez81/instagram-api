@@ -19,6 +19,35 @@ body {
 	font-size: 3em;
 }
 
+.intro {
+	text-align: center;
+	font-family: SofiaProExtraLight;
+	font-size: 3em;
+}
+
+.instruction {
+	text-align: center;
+	padding-top: 10px;
+	font-family: SofiaProExtraLight;
+	font-size: 1.5em;
+}
+
+.container {
+	display: none;
+}
+
+.button {
+	margin-left:45%;
+	margin-right:45%;
+	margin-top: 2em;
+	color: blue;
+}
+
+.btn-primary {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .city-item {
     margin-bottom: 25px;
 }

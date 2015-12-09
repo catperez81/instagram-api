@@ -14,4 +14,16 @@ $(document).ready(function() {
 
 });  
 
-  
+function getRequest(searchTag){
+  var params = {
+  	media_count: 50,
+    name: 'New York',
+    q: searchTag 
+  };
+  var url = 'https://api.instagram.com/v1/tags/search?q=New&York_token=ACCESS-TOKEN';
+
+  $.getJSON(url, params, function(data){
+    showResults(data.items);
+    console.log(data.items);
+  });
+}
