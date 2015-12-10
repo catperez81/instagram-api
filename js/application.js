@@ -11,10 +11,13 @@ $(document).ready(function() {
 	  $('.authenticate').hide();
 	}
 
+	var accessToken = link.split("=")[1];
+
   $('.city-item').click(function() {
     // console.log('test');
   	$('.container').hide();
   	$('.container-city').show();
+  	getRequest('newyork');
   })
 
 });  
@@ -23,7 +26,7 @@ function getRequest(searchTag){
   var params = {
   	// media_count: 50,
    //  name: 'newyork',
-    q: 'newyork',
+    q: searchTag,
     access_token: accessToken 
   };
   // var url = 'https://api.instagram.com/v1/tags/search?q=newyork&access_token=ACCESS-TOKEN';
@@ -36,7 +39,7 @@ function getRequest(searchTag){
   	type: 'GET'
   })
   .done(function(result) {
-
+  console.log(results);
   });
 
   // $.getJSON(url, params, function(data){
