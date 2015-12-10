@@ -18,10 +18,10 @@ $(document).ready(function() {
 function getRequest(searchTag){
   var params = {
   	media_count: 50,
-    name: 'New York',
+    name: 'newyork',
     q: searchTag 
   };
-  var url = 'https://api.instagram.com/v1/tags/search?q=New&York_token=ACCESS-TOKEN';
+  var url = 'https://api.instagram.com/v1/tags/search?q=newyork&access_token=ACCESS-TOKEN';
 
   $.getJSON(url, params, function(data){
     showResults(data.items);
