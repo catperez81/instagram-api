@@ -2,7 +2,7 @@
 // $(document).ready(function() {
 //   alert('Oh, hi there, world');
 // });
-
+var accessToken = null;
 
 $(document).ready(function() {
 
@@ -11,9 +11,9 @@ $(document).ready(function() {
 	  $('.authenticate').hide();
 	}
 
-	var accessToken = link.split("=")[1];
+	accessToken = link.split("=")[1];
   	getRequest('newyork');
-  	
+
   $('.city-item').click(function() {
     // console.log('test');
   	$('.container').hide();
