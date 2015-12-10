@@ -14,7 +14,6 @@ $(document).ready(function() {
   $('.city-item').click(function() {
     // console.log('test');
   	$('.container').hide();
-  	// $('.authenticate').hide();
   	$('.container-city').show();
   })
 
@@ -22,15 +21,28 @@ $(document).ready(function() {
 
 function getRequest(searchTag){
   var params = {
-  	media_count: 50,
-    name: 'newyork',
-    q: searchTag 
+  	// media_count: 50,
+   //  name: 'newyork',
+    q: 'newyork',
+    access_token: accessToken 
   };
-  var url = 'https://api.instagram.com/v1/tags/search?q=newyork&access_token=ACCESS-TOKEN';
+  // var url = 'https://api.instagram.com/v1/tags/search?q=newyork&access_token=ACCESS-TOKEN';
+   var url = 'https://api.instagram.com/v1/tags/search';
 
-  $.getJSON(url, params, function(data){
-    showResults(data.items);
-    console.log(data.items);
+  $.ajax({
+  	url: url,
+  	data: params,
+  	dataType: "jsonp",
+  	type: 'GET'
+  })
+  .done(function(result) {
+
   });
+
+  // $.getJSON(url, params, function(data){
+
+  //   showResults(data.items);
+  //   console.log(data.items);
+  // });
 }
 
