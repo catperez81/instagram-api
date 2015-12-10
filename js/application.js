@@ -12,12 +12,12 @@ $(document).ready(function() {
 	}
 
 	var accessToken = link.split("=")[1];
-
+  	getRequest('newyork');
+  	
   $('.city-item').click(function() {
     // console.log('test');
   	$('.container').hide();
   	$('.container-city').show();
-  	getRequest('newyork');
   })
 
 });  
