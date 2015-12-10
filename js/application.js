@@ -9,6 +9,7 @@ $(document).ready(function() {
   $('.city-item').click(function() {
     // console.log('test');
   	$('.container').hide();
+  	$('.authenticate').hide();
   	$('.container-city').show();
   })
 
