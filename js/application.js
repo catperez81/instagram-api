@@ -38,7 +38,7 @@ function getRequest(searchTag){
   	dataType: "jsonp",
   	type: 'GET'
   })
-  .done(function(result) {
+  .done(function(results) {
   console.log(results);
   });
 
