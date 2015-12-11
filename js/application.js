@@ -1,18 +1,19 @@
 
 // $(document).ready(function() {
 //   alert('Oh, hi there, world');
-// });
-var accessToken = null;
+// // });
+// var accessToken = null;
+api_key = sys.argv[57d7141ae3944cabe43eb0a4b81b9cfa];
 
 $(document).ready(function() {
 
-	var link = window.location.href;
-	if (link.indexOf('#') > 0) {
-	  $('.authenticate').hide();
-	}
+	// var link = window.location.href;
+	// if (link.indexOf('#') > 0) {
+	//   $('.authenticate').hide();
+	// }
 
 	accessToken = link.split("=")[1];
-  	getRequest('newyork');
+  	// getRequest('newyork');
 
   $('.city-item').click(function() {
     // console.log('test');
@@ -27,7 +28,7 @@ function getRequest(searchTag){
   	// media_count: 50,
    //  name: 'newyork',
     q: searchTag,
-    access_token: accessToken 
+    // access_token: accessToken 
   };
   // var url = 'https://api.instagram.com/v1/tags/search?q=newyork&access_token=ACCESS-TOKEN';
    var url = 'https://api.instagram.com/v1/tags/search';

@@ -15,7 +15,6 @@ body {
 .page-header {
 	text-align: center;
 	padding-bottom: 50px;
-	padding-top:50px;
 	font-family: SofiaProExtraLight;
 	font-size: 3em;
 }
@@ -24,13 +23,6 @@ body {
 	text-align: center;
 	font-family: SofiaProExtraLight;
 	font-size: 3em;
-}
-
-.instruction {
-	text-align: center;
-	padding-top: 10px;
-	font-family: SofiaProExtraLight;
-	font-size: 1.5em;
 }
 
 
